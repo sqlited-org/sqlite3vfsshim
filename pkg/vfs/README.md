@@ -1,5 +1,4 @@
-# vfs (`github.com/sqlited-org/sqlite3vfsshim/pkg/vfs`)
-
+# vfs
 Implement a complete SQLite **VFS** in Go, in the spirit of
 [psanford/sqlite3vfs](https://github.com/psanford/sqlite3vfs). The VFS replaces
 SQLite's file layer entirely; there is no parent VFS. To wrap an existing VFS and
