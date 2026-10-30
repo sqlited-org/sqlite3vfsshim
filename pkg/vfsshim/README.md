@@ -1,6 +1,6 @@
-# vfsshim (`github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim`)
+# vfsshim
 
-A proof-of-concept Go API for writing SQLite **VFS shims**: VFSes that stack on
+A Go API for writing SQLite **VFS shims**: VFSes that stack on
 top of an existing VFS (e.g. `unix`) and intercept calls, as described in the
 [SQLite VFS docs](https://www.sqlite.org/vfs.html). It is the sibling of
 [psanford/sqlite3vfs](https://github.com/psanford/sqlite3vfs), but where that
@@ -129,7 +129,7 @@ See [examples/trace](../../examples/trace/main.go) and [shim_test.go](shim_test.
   become `SQLITE_IOERR`.
 - Shims can be stacked: a shim's parent may itself be a shim.
 
-## Limitations (POC)
+## Limitations
 
 - Hooks can observe or veto, not replace results.
 - `Unregister` must not be called while connections using the shim are open.
