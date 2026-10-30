@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 
-	shim "github.com/emo/sqlite3vfsshim/pkg/vfsshim"
 	_ "github.com/mattn/go-sqlite3"
+	shim "github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim"
 )
 
 type counters struct {

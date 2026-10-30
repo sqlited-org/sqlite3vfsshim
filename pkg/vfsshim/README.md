@@ -1,4 +1,4 @@
-# vfsshim (`github.com/emo/sqlite3vfsshim/pkg/vfsshim`)
+# vfsshim (`github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim`)
 
 A proof-of-concept Go API for writing SQLite **VFS shims**: VFSes that stack on
 top of an existing VFS (e.g. `unix`) and intercept calls, as described in the
@@ -9,7 +9,7 @@ everything else is delegated to the parent. The parent VFS lives only in the C
 code; Go supplies its name and optional hooks. To implement a complete VFS with no
 parent, use the sibling library [pkg/vfs](../vfs/README.md).
 
-Install: `go get github.com/emo/sqlite3vfsshim/pkg/vfsshim`. Works with [mattn/go-sqlite3](https://github.com/mattn/go-sqlite3).
+Install: `go get github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim`. Works with [mattn/go-sqlite3](https://github.com/mattn/go-sqlite3).
 
 ## Usage
 

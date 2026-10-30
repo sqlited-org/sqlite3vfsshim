@@ -4,7 +4,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // Shim is the value passed to Register. It is an empty interface on purpose: a

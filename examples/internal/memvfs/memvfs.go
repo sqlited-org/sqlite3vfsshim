@@ -1,5 +1,5 @@
 // Package memvfs is a complete in-memory SQLite VFS written with the
-// github.com/emo/sqlite3vfsshim/pkg/vfs library. It is shared by the memvfs and
+// github.com/sqlited-org/sqlite3vfsshim/pkg/vfs library. It is shared by the memvfs and
 // memvfs-ext examples.
 //
 // Limitations: locking is a no-op, so use a single connection per database;
@@ -12,8 +12,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfs"
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfs"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // VFS keeps every file (database, journal, temp files) in a map.

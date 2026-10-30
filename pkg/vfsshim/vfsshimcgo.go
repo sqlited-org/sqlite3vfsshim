@@ -12,7 +12,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // Go side of the shim: how hook calls cross the C/Go boundary.

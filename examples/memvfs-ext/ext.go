@@ -9,8 +9,8 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/examples/internal/memvfs"
-	"github.com/emo/sqlite3vfsshim/pkg/vfs"
+	"github.com/sqlited-org/sqlite3vfsshim/examples/internal/memvfs"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfs"
 )
 
 // sqliteOKLoadPermanently tells SQLite never to unload this library (it

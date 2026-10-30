@@ -14,8 +14,8 @@ Import it alongside either library:
 
 ```go
 import (
-    "github.com/emo/sqlite3vfsshim/pkg/vfs"      // or pkg/vfsshim
-    "github.com/emo/sqlite3vfsshim/pkg/vfscore"
+    "github.com/sqlited-org/sqlite3vfsshim/pkg/vfs"      // or pkg/vfsshim
+    "github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 ```
 

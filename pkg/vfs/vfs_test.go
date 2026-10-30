@@ -10,9 +10,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfs"
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfs"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // memVFS is a complete in-memory VFS.

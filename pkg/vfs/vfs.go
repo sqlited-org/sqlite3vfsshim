@@ -3,14 +3,14 @@
 // parameter, e.g. "file:test.db?vfs=myvfs".
 //
 // To wrap an existing VFS instead of replacing it, see the sibling package
-// github.com/emo/sqlite3vfsshim/pkg/vfsshim.
+// github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim.
 package vfs
 
 import (
 	"time"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 type options struct {

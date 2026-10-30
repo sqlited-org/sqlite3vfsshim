@@ -1,4 +1,4 @@
-module github.com/emo/sqlite3vfsshim/pkg/vfscore
+module github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore
 
 go 1.22.2
 

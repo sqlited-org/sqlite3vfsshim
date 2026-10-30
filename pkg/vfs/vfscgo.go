@@ -13,7 +13,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // Go side of the library: how calls cross the Go/C boundary. All calls travel

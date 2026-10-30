@@ -6,7 +6,7 @@ import (
 
 	_ "github.com/mattn/go-sqlite3" // provides sqlite3_uri_parameter
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 )
 
 // SQLite hands a VFS a filename laid out as "name\0key\0value\0...\0\0",

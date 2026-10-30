@@ -5,10 +5,10 @@ the `go.work` workspace at the repository root):
 
 | Module | Import path | What it is |
 |---|---|---|
-| [pkg/vfs](pkg/vfs/README.md) | `github.com/emo/sqlite3vfsshim/pkg/vfs` | Implement a **complete, standard VFS** in Go (like [psanford/sqlite3vfs](https://github.com/psanford/sqlite3vfs)). No parent VFS. |
-| [pkg/vfsshim](pkg/vfsshim/README.md) | `github.com/emo/sqlite3vfsshim/pkg/vfsshim` | Write a **VFS shim** that stacks on an existing VFS (`unix`, another shim, ...) and hooks only the calls you need (observe/veto); the parent is called from C, so WAL works unchanged. |
-| [pkg/vfscore](pkg/vfscore/README.md) | `github.com/emo/sqlite3vfsshim/pkg/vfscore` | Pure-Go types shared by both libraries (errors, flags, `File`, helpers). Import it for `vfscore.OpenFlag`, `vfscore.File`, etc. |
-| [examples](examples) | `github.com/emo/sqlite3vfsshim/examples` | Runnable examples (own module, depends on both). |
+| [pkg/vfs](pkg/vfs/README.md) | `github.com/sqlited-org/sqlite3vfsshim/pkg/vfs` | Implement a **complete, standard VFS** in Go (like [psanford/sqlite3vfs](https://github.com/psanford/sqlite3vfs)). No parent VFS. |
+| [pkg/vfsshim](pkg/vfsshim/README.md) | `github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim` | Write a **VFS shim** that stacks on an existing VFS (`unix`, another shim, ...) and hooks only the calls you need (observe/veto); the parent is called from C, so WAL works unchanged. |
+| [pkg/vfscore](pkg/vfscore/README.md) | `github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore` | Pure-Go types shared by both libraries (errors, flags, `File`, helpers). Import it for `vfscore.OpenFlag`, `vfscore.File`, etc. |
+| [examples](examples) | `github.com/sqlited-org/sqlite3vfsshim/examples` | Runnable examples (own module, depends on both). |
 
 Both are cgo libraries with no dependency on each other (the shared flag/error types
 and `URI` live in `pkg/vfscore`), both work with

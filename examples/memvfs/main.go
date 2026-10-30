@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/emo/sqlite3vfsshim/examples/internal/memvfs"
-	"github.com/emo/sqlite3vfsshim/pkg/vfs"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/sqlited-org/sqlite3vfsshim/examples/internal/memvfs"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfs"
 )
 
 func main() {

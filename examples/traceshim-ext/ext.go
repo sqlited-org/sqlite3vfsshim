@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"unsafe"
 
-	"github.com/emo/sqlite3vfsshim/pkg/vfscore"
+	"github.com/sqlited-org/sqlite3vfsshim/pkg/vfscore"
 
-	shim "github.com/emo/sqlite3vfsshim/pkg/vfsshim"
+	shim "github.com/sqlited-org/sqlite3vfsshim/pkg/vfsshim"
 )
 
 // sqliteOKLoadPermanently tells SQLite never to unload this library (it
