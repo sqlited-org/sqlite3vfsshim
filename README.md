@@ -3,6 +3,8 @@
 Go APIs for SQLite VFSes, as two independent Go modules (use both together via
 the `go.work` workspace at the repository root):
 
+https://www.sqlite.org/vfs.html
+
 | Module | Import path | What it is |
 |---|---|---|
 | [pkg/vfs](pkg/vfs/README.md) | `github.com/sqlited-org/sqlite3vfsshim/pkg/vfs` | Implement a **complete, standard VFS** in Go (like [psanford/sqlite3vfs](https://github.com/psanford/sqlite3vfs)). No parent VFS. |
